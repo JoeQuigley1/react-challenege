@@ -1,20 +1,16 @@
 import css from './App.module.css';
-import Content from './components/Content';
-                                                                                                                    
-// function App() {
-//   return (
-//     <div className={css.App}>
-//       <Sidebar/>
-//     </div>
-//   );
-// }
+import UseEffectCounter from './components/UseEffectCounter';
 
+
+import UseStateWithObjects from './components/UseStateWithObjects';
+                                                                                                                    
 function App() {
   return (
     <div>
       {/* <NavBarForm/> 
       <Sidebar /> */}
-      <Content /> 
+      < UseStateWithObjects />
+      <UseEffectCounter />
     </div>
   )
   }

@@ -1,5 +1,6 @@
 import css from './App.module.css';
-import ContentAPI from './components/ContentAPI';
+import ContentAPIHooks from './components/ContentAPIHooks';
+
 import API_KEY from './secrets';
 
                                                                                                                     
@@ -11,7 +12,7 @@ function App() {
       {/* < UseStateWithObjects />
       <UseEffectCounter /> */}
       {/* <ContentHooks /> */}
-      <ContentAPI /> 
+      <ContentAPIHooks />
     </div>
   )
   }

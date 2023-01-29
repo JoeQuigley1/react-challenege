@@ -1,7 +1,6 @@
 import css from './App.module.css';
-import UseEffectCounter from './components/UseEffectCounter';
-
-import ContentHooks from './components/ContentHooks';
+import ContentAPI from './components/ContentAPI';
+import API_KEY from './secrets';
 
                                                                                                                     
 function App() {
@@ -11,7 +10,8 @@ function App() {
       <Sidebar /> */}
       {/* < UseStateWithObjects />
       <UseEffectCounter /> */}
-      <ContentHooks />
+      {/* <ContentHooks /> */}
+      <ContentAPI /> 
     </div>
   )
   }

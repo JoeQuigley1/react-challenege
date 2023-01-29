@@ -17,13 +17,32 @@ export class Content extends Component {
         setTimeout(()=>{
             this.setState({
                 isLoaded: true,
+                posts: savedPosts
             })
         }, 2000)
     }
     
+    handleChange(event) {
+        const name =event.target.value.toLowerCase();
+        const filteredPosts = savedPosts.filter((posts) => {
+            return posts.name.toLocaleLowerCase().includes(name);
+        })
+        this.setState({
+            posts: filteredPosts
+        })
+    }
+
     render() {
         return (
             <div className={css.Content}>
+                <form>
+                    <label htmlFor="searchInput">Search: </label>
+                    <input 
+                    onChange={(event) => this.handleChange(event)} 
+                    type="search" 
+                    id="searchInput" />
+                    <h4>posts found: {this.state.posts.length} </h4>
+                </form>
                 
                 <div className={css.TitleBar}>
                     <h1>My Photos</h1>

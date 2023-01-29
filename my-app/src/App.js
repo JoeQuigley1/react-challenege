@@ -1,16 +1,17 @@
 import css from './App.module.css';
 import UseEffectCounter from './components/UseEffectCounter';
 
+import ContentHooks from './components/ContentHooks';
 
-import UseStateWithObjects from './components/UseStateWithObjects';
                                                                                                                     
 function App() {
   return (
     <div>
       {/* <NavBarForm/> 
       <Sidebar /> */}
-      < UseStateWithObjects />
-      <UseEffectCounter />
+      {/* < UseStateWithObjects />
+      <UseEffectCounter /> */}
+      <ContentHooks />
     </div>
   )
   }
